@@ -16,7 +16,10 @@ listaPares = filter(lambda x: x%2==0, lista)
 listaPares1 = filter(esPar, lista)
 
 sumatorio = reduce(lambda x,y: x+y, lista)
-sumatorioDobles = reduce(lambda x,y: x+y*2, lista)
+l = lista[:]
+l.insert(0,0)
+
+sumatorioDobles = reduce(lambda x,y: x+y*2, l)
 
 suma100 = reduce (lambda x,y: x+y, range(101))
 
